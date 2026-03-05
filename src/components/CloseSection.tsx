@@ -24,9 +24,6 @@ const CloseSection = () => (
       <h2 className="font-display font-normal leading-[0.93] text-cream mb-6" style={{ fontSize: 'clamp(44px, 6vw, 82px)', letterSpacing: '-3px' }}>
         Influentes.<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.40)' }}>Founders Program.</em>
       </h2>
-      <p className="font-mono-brand text-[11px] leading-[1.7] tracking-[0.3px] mt-6" style={{ color: 'rgba(240,237,230,0.40)' }}>
-        30 vagas. Seleção por candidatura. Faturamento mínimo R$10M.
-      </p>
     </div>
 
     <div className="relative z-[1]" style={{ border: '1px solid rgba(240,237,230,0.08)', borderTop: '2px solid hsl(42 33% 92%)' }}>

@@ -48,14 +48,16 @@ const MercadoSection = () => {
   return (
     <section className="py-[72px] px-6 md:py-[100px] md:px-[52px] relative bg-ink" style={{ borderBottom: '1px solid rgba(240,237,230,0.08)' }}>
       <div className="wave-bg" />
-      <h2 className="font-serif-body font-normal leading-[1.15] text-cream mb-12" style={{ fontSize: 'clamp(26px, 3vw, 42px)', letterSpacing: '-0.5px' }}>
-        O mercado não compra<br />
-        do melhor. Compra de<br />
-        <em className="italic" style={{ color: 'rgba(240,237,230,0.60)' }}>quem lembra.</em>
-      </h2>
-      <p className="text-[15px] font-light leading-[1.85] max-w-[520px]" style={{ color: 'rgba(240,237,230,0.93)' }}>
-        Quando a sua presença se torna consistente, os efeitos aparecem em quatro frentes do negócio:
-      </p>
+      <div className="text-center mb-12">
+        <h2 className="font-serif-body font-normal leading-[1.15] text-cream inline-block" style={{ fontSize: 'clamp(26px, 3vw, 42px)', letterSpacing: '-0.5px' }}>
+          O mercado não compra<br />
+          do melhor. Compra de<br />
+          <em className="italic" style={{ color: 'rgba(240,237,230,0.60)' }}>quem lembra.</em>
+        </h2>
+        <p className="text-[15px] font-light leading-[1.85] mt-6 mx-auto" style={{ color: 'rgba(240,237,230,0.93)', maxWidth: '520px' }}>
+          Quando a sua presença se torna consistente, os efeitos aparecem em quatro frentes do negócio:
+        </p>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 mt-14" style={{ gap: '1px', background: 'rgba(240,237,230,0.08)', border: '1px solid rgba(240,237,230,0.08)' }}>
         {frentes.map((f, i) => {

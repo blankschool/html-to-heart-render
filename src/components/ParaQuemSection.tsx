@@ -12,7 +12,6 @@ const specs = [
   ['Setores', 'Curadoria por complementaridade'],
   ['Duração', '120 dias'],
   ['Processo', 'Seleção exclusiva'],
-  ['Investimento', 'R$ 100.000'],
 ];
 
 const ParaQuemSection = () => (

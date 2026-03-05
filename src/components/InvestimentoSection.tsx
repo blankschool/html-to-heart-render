@@ -36,8 +36,13 @@ const InvestimentoSection = () => (
     <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] mt-14 bg-ink-2" style={{ border: '1px solid rgba(240,237,230,0.08)', borderTop: '2px solid hsl(42 33% 92%)' }}>
       <div className="p-[48px_40px] flex flex-col" style={{ borderRight: '1px solid rgba(240,237,230,0.08)' }}>
         <div className="font-mono-brand text-[9px] tracking-[3px] uppercase mb-5" style={{ color: 'rgba(240,237,230,0.78)' }}>Programa Influentes</div>
-        <div className="font-display text-[50px] font-normal text-cream leading-none mb-1.5" style={{ letterSpacing: '-2px' }}>R$ 100.000</div>
-        <div className="font-mono-brand text-[11px] mb-9" style={{ color: 'rgba(240,237,230,0.78)' }}>Parcelamento disponível | Consulte condições</div>
+        <div className="font-display text-[32px] font-normal text-cream leading-[1.1] mb-3" style={{ letterSpacing: '-1.5px' }}>
+          Investimento<br />
+          <em className="italic" style={{ color: 'rgba(240,237,230,0.40)' }}>sob consulta.</em>
+        </div>
+        <p className="text-[13px] font-light leading-[1.75] mb-9 flex-1" style={{ color: 'rgba(240,237,230,0.78)' }}>
+          Envie sua aplicação e nosso time de especialistas entrará em contato para apresentar o programa e o investimento.
+        </p>
         <a href="#" className="block w-full py-4 text-center font-mono-brand text-[11px] font-medium tracking-[2px] uppercase bg-cream text-ink no-underline transition-opacity hover:opacity-[0.88] mb-3">Enviar Aplicação</a>
         <div className="font-mono-brand text-[10px] text-center leading-[1.6]" style={{ color: 'rgba(240,237,230,0.60)' }}>Por candidatura · R$10M+ de faturamento · 30 vagas</div>
       </div>
