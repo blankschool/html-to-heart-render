@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Eyebrow = ({ children }: { children: React.ReactNode }) => (
-  <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-6" style={{ color: 'rgba(240,237,230,0.5)' }}>
+  <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-6" style={{ color: 'rgba(240,237,230,0.72)' }}>
     <span className="w-5 h-px flex-shrink-0" style={{ background: 'rgba(240,237,230,0.3)' }} />
     {children}
   </div>
@@ -116,10 +116,10 @@ const JornadaSection = () => {
         <div>
           <Eyebrow>A jornada</Eyebrow>
           <h2 className="font-display font-normal leading-[0.96] text-cream" style={{ fontSize: 'clamp(40px, 5vw, 72px)', letterSpacing: '-2px' }}>
-            Quatro meses,<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.3)' }}>cada um com</em><br /><em className="italic" style={{ color: 'rgba(240,237,230,0.3)' }}>responsabilidades distintas.</em>
+            Quatro meses,<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.40)' }}>cada um com</em><br /><em className="italic" style={{ color: 'rgba(240,237,230,0.40)' }}>responsabilidades distintas.</em>
           </h2>
         </div>
-        <p className="text-[15px] font-light leading-[1.85] pt-0 md:pt-[52px]" style={{ color: 'rgba(240,237,230,0.82)' }}>
+        <p className="text-[15px] font-light leading-[1.85] pt-0 md:pt-[52px]" style={{ color: 'rgba(240,237,230,0.92)' }}>
           Cada mês tem responsabilidades distintas. O primeiro é quase todo da Blank. Do segundo em diante, o time assume progressivamente — até operar com total autonomia no encerramento.
         </p>
       </div>
@@ -146,9 +146,9 @@ const JornadaSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2" style={{ border: '1px solid rgba(240,237,230,0.08)', borderTop: 'none', background: 'rgba(240,237,230,0.015)' }}>
         <div className="p-[44px_24px] md:p-[44px_40px] flex flex-col gap-6" style={{ borderRight: '1px solid rgba(240,237,230,0.08)' }}>
           <h3 className="font-display font-normal leading-[0.97] text-cream" style={{ fontSize: 'clamp(28px, 3vw, 44px)', letterSpacing: '-1.5px' }}>{m.panelTitle}</h3>
-          <p className="text-[13.5px] font-light leading-[1.85]" style={{ color: 'rgba(240,237,230,0.82)' }}>{m.panelLead}</p>
+          <p className="text-[13.5px] font-light leading-[1.85]" style={{ color: 'rgba(240,237,230,0.92)' }}>{m.panelLead}</p>
           <div>
-            <div className="font-mono-brand text-[9px] font-medium tracking-[3px] uppercase mb-2.5" style={{ color: 'rgba(240,237,230,0.45)' }}>{m.cycleLabel}</div>
+            <div className="font-mono-brand text-[9px] font-medium tracking-[3px] uppercase mb-2.5" style={{ color: 'rgba(240,237,230,0.68)' }}>{m.cycleLabel}</div>
             <div className="grid grid-cols-4 gap-[2px]">
               {m.weeks.map((w, i) => {
                 const s = cwStyles(w.type);

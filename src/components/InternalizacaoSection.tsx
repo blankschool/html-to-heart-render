@@ -1,5 +1,5 @@
 const Eyebrow = ({ children }: { children: React.ReactNode }) => (
-  <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-6" style={{ color: 'rgba(240,237,230,0.5)' }}>
+  <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-6" style={{ color: 'rgba(240,237,230,0.72)' }}>
     <span className="w-5 h-px flex-shrink-0" style={{ background: 'rgba(240,237,230,0.3)' }} />
     {children}
   </div>
@@ -26,18 +26,18 @@ const InternalizacaoSection = () => (
       <div>
         <Eyebrow>Internalização da inteligência — o critério de sucesso do programa</Eyebrow>
         <h2 className="font-display font-normal leading-[0.96] text-cream" style={{ fontSize: 'clamp(40px, 5vw, 72px)', letterSpacing: '-2px' }}>
-          A Blank não quer<br />ser necessária<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.3)' }}>para sempre.</em>
+          A Blank não quer<br />ser necessária<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.40)' }}>para sempre.</em>
         </h2>
       </div>
       <div className="pt-0 md:pt-[52px]">
-        <p className="text-[15px] font-light leading-[1.85]" style={{ color: 'rgba(240,237,230,0.82)' }}>
+        <p className="text-[15px] font-light leading-[1.85]" style={{ color: 'rgba(240,237,230,0.92)' }}>
           A maioria das agências tem incentivo para permanecer indispensável. O Influentes inverte essa lógica: o critério de sucesso é que você não precise da Blank no mês 5.
         </p>
         <div className="mt-6">
-          <div className="font-mono-brand text-[9px] tracking-[3px] uppercase mb-3" style={{ color: 'rgba(240,237,230,0.5)' }}>O que é entregue na call de 3h</div>
+          <div className="font-mono-brand text-[9px] tracking-[3px] uppercase mb-3" style={{ color: 'rgba(240,237,230,0.72)' }}>O que é entregue na call de 3h</div>
           {deliverables.map((d, i) => (
-            <div key={i} className="flex items-baseline gap-2.5 py-2.5 text-[13px] font-light" style={{ color: 'rgba(240,237,230,0.82)', borderBottom: '1px solid rgba(240,237,230,0.04)' }}>
-              <span className="font-mono-brand text-[10px] flex-shrink-0" style={{ color: 'rgba(240,237,230,0.45)' }}>→</span>
+            <div key={i} className="flex items-baseline gap-2.5 py-2.5 text-[13px] font-light" style={{ color: 'rgba(240,237,230,0.92)', borderBottom: '1px solid rgba(240,237,230,0.04)' }}>
+              <span className="font-mono-brand text-[10px] flex-shrink-0" style={{ color: 'rgba(240,237,230,0.68)' }}>→</span>
               {d}
             </div>
           ))}

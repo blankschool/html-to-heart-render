@@ -1,5 +1,5 @@
 const Eyebrow = ({ children }: { children: React.ReactNode }) => (
-  <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-6" style={{ color: 'rgba(240,237,230,0.5)' }}>
+  <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-6" style={{ color: 'rgba(240,237,230,0.72)' }}>
     <span className="w-5 h-px flex-shrink-0" style={{ background: 'rgba(240,237,230,0.3)' }} />
     {children}
   </div>
@@ -17,10 +17,10 @@ const CasesSection = () => (
       <div>
         <Eyebrow>Resultados</Eyebrow>
         <h2 className="font-display font-normal leading-[0.96] text-cream" style={{ fontSize: 'clamp(40px, 5vw, 72px)', letterSpacing: '-2px' }}>
-          Cases de<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.3)' }}>clientes.</em>
+          Cases de<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.40)' }}>clientes.</em>
         </h2>
       </div>
-      <p className="text-[15px] font-light leading-[1.85] pt-0 md:pt-[52px]" style={{ color: 'rgba(240,237,230,0.82)' }}>
+      <p className="text-[15px] font-light leading-[1.85] pt-0 md:pt-[52px]" style={{ color: 'rgba(240,237,230,0.92)' }}>
         A Blank gere 34 milhões de seguidores dos principais empresários do Brasil. Os nossos cases provam que o método funciona em fundadores diferentes, em setores diferentes e em estágios distintos de empresa.
       </p>
     </div>
@@ -30,10 +30,10 @@ const CasesSection = () => (
         <div key={i} className="bg-ink p-[40px_32px] relative overflow-hidden transition-colors hover:bg-ink-2 group">
           <div className="absolute top-0 left-0 right-0 h-[2px] bg-transparent transition-colors group-hover:bg-signal/40" />
           <div className="font-display font-normal text-cream leading-none mb-4" style={{ fontSize: 'clamp(24px, 2.5vw, 36px)', letterSpacing: '-1px' }}>{c.num}</div>
-          <p className="text-[13px] font-light leading-[1.8] mb-7" style={{ color: 'rgba(240,237,230,0.82)' }}>{c.body}</p>
+          <p className="text-[13px] font-light leading-[1.8] mb-7" style={{ color: 'rgba(240,237,230,0.92)' }}>{c.body}</p>
           <div className="h-px mb-3.5" style={{ background: 'rgba(240,237,230,0.08)' }} />
           <div className="font-serif-body text-[14px] text-cream">{c.who}</div>
-          <div className="font-mono-brand text-[10px] mt-[3px] tracking-[0.3px]" style={{ color: 'rgba(240,237,230,0.45)' }}>{c.role}</div>
+          <div className="font-mono-brand text-[10px] mt-[3px] tracking-[0.3px]" style={{ color: 'rgba(240,237,230,0.68)' }}>{c.role}</div>
         </div>
       ))}
     </div>

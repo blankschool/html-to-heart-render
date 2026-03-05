@@ -1,10 +1,3 @@
-const Eyebrow = ({ children }: { children: React.ReactNode }) => (
-  <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-6" style={{ color: 'rgba(240,237,230,0.5)' }}>
-    <span className="w-5 h-px flex-shrink-0" style={{ background: 'rgba(240,237,230,0.3)' }} />
-    {children}
-  </div>
-);
-
 const cards = [
   { title: 'Conselheiros presencialmente', body: 'Rony, Renata ou Erich presente. Mentoria presencial com quem construiu presença que gera negócio — e pode ser consultado ao vivo.' },
   { title: 'Networking com outros membros', body: 'Espaço para construir ou fortalecer amizades duradouras com os colegas que você conheceu ao longo do seu cohort.' },
@@ -14,70 +7,94 @@ const cards = [
 
 const EventoPresencialSection = () => (
   <section className="bg-ink-2 overflow-hidden" style={{ borderBottom: '1px solid rgba(240,237,230,0.08)' }}>
-    <div className="grid grid-cols-1 md:grid-cols-2" style={{ borderTop: 'none' }}>
 
-      {/* Left column — eyebrow + title + photo + stats */}
+    {/* Full-width eyebrow bar */}
+    <div
+      className="px-6 md:px-[52px] py-5 font-mono-brand text-[10px] font-medium tracking-[4px] uppercase flex items-center gap-3.5"
+      style={{ color: 'rgba(240,237,230,0.72)', borderBottom: '1px solid rgba(240,237,230,0.08)' }}
+    >
+      <span className="w-5 h-px flex-shrink-0" style={{ background: 'rgba(240,237,230,0.3)' }} />
+      Encontro Presencial — Benefício Pós-Programa
+    </div>
+
+    {/* Two-column body */}
+    <div className="grid grid-cols-1 md:grid-cols-2" style={{ minHeight: '680px' }}>
+
+      {/* Left — title + photo + stats */}
       <div className="flex flex-col" style={{ borderRight: '1px solid rgba(240,237,230,0.08)' }}>
 
-        {/* Header */}
-        <div className="px-6 md:px-[52px] pt-[72px] md:pt-[100px] pb-8">
-          <Eyebrow>Encontro presencial — benefício pós-programa</Eyebrow>
-          <h2 className="font-display font-normal leading-[0.94] text-cream" style={{ fontSize: 'clamp(40px, 5vw, 72px)', letterSpacing: '-2px' }}>
-            Evento<br />presencial.<br />
-            <em className="italic" style={{ color: 'rgba(240,237,230,0.3)' }}>3× por ano.</em>
+        {/* Title */}
+        <div className="px-6 md:px-[52px] pt-10 pb-8">
+          <h2
+            className="font-display font-normal leading-[0.94] text-cream"
+            style={{ fontSize: 'clamp(44px, 5.5vw, 80px)', letterSpacing: '-2.5px' }}
+          >
+            Evento presencial
           </h2>
         </div>
 
-        {/* Photo */}
-        <div className="relative overflow-hidden flex-1" style={{ minHeight: '340px' }}>
+        {/* Photo — fills all available space */}
+        <div className="relative flex-1 overflow-hidden" style={{ minHeight: '360px' }}>
           <img
             src="/evento-presencial.jpg"
-            alt="Evento presencial Influentes"
-            className="absolute inset-0 w-full h-full object-cover object-top"
-            style={{ filter: 'grayscale(100%)', opacity: 0.88 }}
+            alt="Evento presencial Influentes — Rony Meisler palestrando"
+            className="absolute inset-0 w-full h-full object-cover object-center"
+            style={{ filter: 'grayscale(100%)', opacity: 0.9 }}
           />
-          {/* Dark overlay for integration with dark UI */}
-          <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(12,12,10,0) 60%, rgba(12,12,10,0.35) 100%)' }} />
+          <div
+            className="absolute inset-0"
+            style={{ background: 'linear-gradient(to bottom, rgba(12,12,10,0) 55%, rgba(12,12,10,0.4) 100%)' }}
+          />
         </div>
 
-        {/* Stats */}
+        {/* Stats row */}
         <div className="grid grid-cols-2" style={{ borderTop: '1px solid rgba(240,237,230,0.08)' }}>
-          <div className="p-[28px_32px]" style={{ borderRight: '1px solid rgba(240,237,230,0.08)' }}>
-            <div className="font-display text-[52px] font-normal text-cream leading-none mb-1.5" style={{ letterSpacing: '-2px' }}>3×</div>
-            <div className="font-mono-brand text-[10px] tracking-[0.5px] leading-[1.5]" style={{ color: 'rgba(240,237,230,0.45)' }}>por ano<br />(a cada 4 meses)</div>
+          <div className="p-[24px_32px]" style={{ borderRight: '1px solid rgba(240,237,230,0.08)' }}>
+            <div
+              className="font-display font-normal text-cream leading-none mb-1.5"
+              style={{ fontSize: 'clamp(36px, 4vw, 52px)', letterSpacing: '-2px' }}
+            >
+              3 ×
+            </div>
+            <div className="font-mono-brand text-[10px] tracking-[0.5px]" style={{ color: 'rgba(240,237,230,0.68)' }}>
+              por ano (a cada 4 meses)
+            </div>
           </div>
-          <div className="p-[28px_32px]">
-            <div className="font-display text-[52px] font-normal text-cream leading-none mb-1.5" style={{ letterSpacing: '-2px' }}>1</div>
-            <div className="font-mono-brand text-[10px] tracking-[0.5px] leading-[1.5]" style={{ color: 'rgba(240,237,230,0.45)' }}>cadeira por<br />membro / ano</div>
+          <div className="p-[24px_32px]">
+            <div
+              className="font-display font-normal text-cream leading-none mb-1.5"
+              style={{ fontSize: 'clamp(36px, 4vw, 52px)', letterSpacing: '-2px' }}
+            >
+              1 cadeira
+            </div>
+            <div className="font-mono-brand text-[10px] tracking-[0.5px]" style={{ color: 'rgba(240,237,230,0.68)' }}>
+              por membro / ano
+            </div>
           </div>
         </div>
 
       </div>
 
-      {/* Right column — 2×2 card grid */}
+      {/* Right — 2×2 card grid */}
       <div
         className="grid grid-cols-2"
-        style={{
-          gap: '1px',
-          background: 'rgba(240,237,230,0.07)',
-          alignContent: 'stretch',
-        }}
+        style={{ gap: '1px', background: 'rgba(240,237,230,0.07)', alignContent: 'stretch' }}
       >
         {cards.map((c, i) => (
           <div
             key={i}
             className="bg-ink-2 transition-colors hover:bg-ink flex flex-col"
-            style={{ padding: 'clamp(28px, 3vw, 44px) clamp(24px, 2.5vw, 36px)' }}
+            style={{ padding: 'clamp(28px, 3vw, 48px) clamp(24px, 2.5vw, 36px)' }}
           >
             <div
-              className="text-[15px] font-medium leading-[1.35] mb-3"
+              className="font-serif-body text-[17px] font-normal leading-[1.3] mb-4"
               style={{ color: 'rgba(240,237,230,0.9)' }}
             >
               {c.title}
             </div>
             <p
               className="text-[13px] font-light leading-[1.75]"
-              style={{ color: 'rgba(240,237,230,0.7)' }}
+              style={{ color: 'rgba(240,237,230,0.85)' }}
             >
               {c.body}
             </p>

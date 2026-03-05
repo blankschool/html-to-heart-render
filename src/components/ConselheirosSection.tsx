@@ -1,5 +1,5 @@
 const Eyebrow = ({ children }: { children: React.ReactNode }) => (
-  <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-6" style={{ color: 'rgba(240,237,230,0.5)' }}>
+  <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-6" style={{ color: 'rgba(240,237,230,0.72)' }}>
     <span className="w-5 h-px flex-shrink-0" style={{ background: 'rgba(240,237,230,0.3)' }} />
     {children}
   </div>
@@ -32,10 +32,10 @@ const ConselheirosSection = () => (
       <div>
         <Eyebrow>Conselheiros</Eyebrow>
         <h2 className="font-display font-normal leading-[0.96] text-cream" style={{ fontSize: 'clamp(40px, 5vw, 72px)', letterSpacing: '-2px' }}>
-          Um conselheiro<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.3)' }}>ao vivo todo mês.</em>
+          Um conselheiro<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.40)' }}>ao vivo todo mês.</em>
         </h2>
       </div>
-      <p className="text-[15px] font-light leading-[1.85] pt-0 md:pt-[52px]" style={{ color: 'rgba(240,237,230,0.82)' }}>
+      <p className="text-[15px] font-light leading-[1.85] pt-0 md:pt-[52px]" style={{ color: 'rgba(240,237,230,0.92)' }}>
         O formato é de conversa aberta — os empresários fazem perguntas diretas sobre como cada conselheiro construiu presença que gera negócio. Rony, Renata e Erich se alternam mensalmente.
       </p>
     </div>
@@ -45,9 +45,9 @@ const ConselheirosSection = () => (
         <div key={i} className="bg-ink p-[40px_32px] transition-colors hover:bg-ink-2">
           <div className="font-display text-[64px] font-normal leading-none mb-[18px]" style={{ color: 'rgba(240,237,230,0.05)' }}>{c.initial}</div>
           <div className="font-serif-body text-[20px] font-normal text-cream mb-1">{c.name}</div>
-          <div className="font-mono-brand text-[10px] leading-[1.5] tracking-[0.3px] mb-[18px]" style={{ color: 'rgba(240,237,230,0.55)' }}>{c.role}</div>
-          <p className="text-[12.5px] font-light leading-[1.8] whitespace-pre-line" style={{ color: 'rgba(240,237,230,0.78)' }}>{c.bio}</p>
-          <div className="mt-[18px] pt-3.5 font-mono-brand text-[9px] tracking-[0.5px]" style={{ borderTop: '1px solid rgba(240,237,230,0.08)', color: 'rgba(240,237,230,0.4)' }}>
+          <div className="font-mono-brand text-[10px] leading-[1.5] tracking-[0.3px] mb-[18px]" style={{ color: 'rgba(240,237,230,0.78)' }}>{c.role}</div>
+          <p className="text-[12.5px] font-light leading-[1.8] whitespace-pre-line" style={{ color: 'rgba(240,237,230,0.90)' }}>{c.bio}</p>
+          <div className="mt-[18px] pt-3.5 font-mono-brand text-[9px] tracking-[0.5px]" style={{ borderTop: '1px solid rgba(240,237,230,0.08)', color: 'rgba(240,237,230,0.65)' }}>
             Rotação mensal · Ao vivo
           </div>
         </div>

@@ -1,5 +1,5 @@
 const Eyebrow = ({ children }: { children: React.ReactNode }) => (
-  <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-6" style={{ color: 'rgba(240,237,230,0.5)' }}>
+  <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-6" style={{ color: 'rgba(240,237,230,0.72)' }}>
     <span className="w-5 h-px flex-shrink-0" style={{ background: 'rgba(240,237,230,0.3)' }} />
     {children}
   </div>
@@ -38,10 +38,10 @@ const EstruturaSection = () => (
       <div>
         <Eyebrow>Estrutura</Eyebrow>
         <h2 className="font-display font-normal leading-[0.96] text-cream" style={{ fontSize: 'clamp(40px, 5vw, 72px)', letterSpacing: '-2px' }}>
-          Como será<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.3)' }}>sua jornada</em>
+          Como será<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.40)' }}>sua jornada</em>
         </h2>
       </div>
-      <p className="text-[15px] font-light leading-[1.85] pt-0 md:pt-[52px]" style={{ color: 'rgba(240,237,230,0.82)' }}>
+      <p className="text-[15px] font-light leading-[1.85] pt-0 md:pt-[52px]" style={{ color: 'rgba(240,237,230,0.92)' }}>
         O programa opera em duas trilhas simultâneas: a trilha individual, de trabalho exclusivo com a sua empresa, e a trilha coletiva, dentro do cohort.
       </p>
     </div>
@@ -52,7 +52,7 @@ const EstruturaSection = () => (
         { label: 'Coletiva — cohort de 30 empresas', cls: 'rgba(240,237,230,0.28)' },
         { label: 'Conselheiros convidados', cls: 'rgba(212,200,154,0.5)' },
       ].map((l, i) => (
-        <div key={i} className="flex items-center gap-2 font-mono-brand text-[10px] tracking-[0.5px]" style={{ color: 'rgba(240,237,230,0.55)' }}>
+        <div key={i} className="flex items-center gap-2 font-mono-brand text-[10px] tracking-[0.5px]" style={{ color: 'rgba(240,237,230,0.78)' }}>
           <div className="w-[7px] h-[7px] rounded-full flex-shrink-0" style={{ background: l.cls }} />
           {l.label}
         </div>
@@ -63,7 +63,7 @@ const EstruturaSection = () => (
       {pilares.map((p, i) => (
         <div key={i} className="bg-ink p-[24px_20px_28px] relative transition-colors hover:bg-ink-2">
           <div className="absolute top-0 left-0 right-0 h-[2px]" style={{ background: barColors[p.track] }} />
-          <span className="font-mono-brand text-[10px] block mb-3.5" style={{ color: 'rgba(240,237,230,0.2)' }}>{p.num}</span>
+          <span className="font-mono-brand text-[10px] block mb-3.5" style={{ color: 'rgba(240,237,230,0.55)' }}>{p.num}</span>
           <div className="text-[13px] font-medium mb-[7px] leading-[1.3]" style={{ color: 'rgba(240,237,230,0.9)' }}>{p.title}</div>
           <p className="text-[11.5px] font-light leading-[1.6]" style={{ color: 'rgba(240,237,230,0.72)' }}>{p.body}</p>
           <div className="mt-4 font-mono-brand text-[9px] tracking-[1px]" style={{ color: whenColors[p.track] }}>{p.when}</div>

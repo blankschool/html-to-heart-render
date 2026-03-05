@@ -1,5 +1,5 @@
 const Eyebrow = ({ children }: { children: React.ReactNode }) => (
-  <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-6" style={{ color: 'rgba(240,237,230,0.5)' }}>
+  <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-6" style={{ color: 'rgba(240,237,230,0.72)' }}>
     <span className="w-5 h-px flex-shrink-0" style={{ background: 'rgba(240,237,230,0.3)' }} />
     {children}
   </div>
@@ -17,19 +17,19 @@ const OQueESection = () => (
       <div>
         <Eyebrow>O que é o Influentes</Eyebrow>
         <h2 className="font-display font-normal leading-[0.96] text-cream mb-7" style={{ fontSize: 'clamp(40px, 5vw, 72px)', letterSpacing: '-2px' }}>
-          Não é mentoria.<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.3)' }}>Não é agência.</em>
+          Não é mentoria.<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.40)' }}>Não é agência.</em>
         </h2>
         <div className="flex flex-col mb-8">
           {notItems.map((text, i) => (
             <div key={i} className="flex gap-4 items-baseline py-3.5" style={{ borderBottom: '1px solid rgba(240,237,230,0.04)' }}>
-              <span className="font-mono-brand text-[12px] flex-shrink-0" style={{ color: 'rgba(240,237,230,0.25)' }}>✕</span>
-              <span className="text-[13px] font-light line-through" style={{ color: 'rgba(240,237,230,0.35)', textDecorationColor: 'rgba(240,237,230,0.12)' }}>{text}</span>
+              <span className="font-mono-brand text-[12px] flex-shrink-0" style={{ color: 'rgba(240,237,230,0.60)' }}>✕</span>
+              <span className="text-[13px] font-light line-through" style={{ color: 'rgba(240,237,230,0.60)', textDecorationColor: 'rgba(240,237,230,0.12)' }}>{text}</span>
             </div>
           ))}
         </div>
       </div>
       <div>
-        <div className="font-mono-brand text-[9px] tracking-[3px] uppercase mb-5" style={{ color: 'rgba(240,237,230,0.45)' }}>O que é</div>
+        <div className="font-mono-brand text-[9px] tracking-[3px] uppercase mb-5" style={{ color: 'rgba(240,237,230,0.68)' }}>O que é</div>
         <div className="font-serif-body text-[18px] font-normal leading-[1.65] mb-8" style={{ color: 'rgba(240,237,230,0.88)' }}>
           Um programa executivo de marca pessoal para donos. Em 120 dias, a Blank desenha o seu posicionamento, capacita o seu time e instala uma operação dentro do seu negócio que gera receita através das suas redes sociais.
         </div>

@@ -22,21 +22,21 @@ const CloseSection = () => (
 
     <div className="relative z-[1]">
       <h2 className="font-display font-normal leading-[0.93] text-cream mb-6" style={{ fontSize: 'clamp(44px, 6vw, 82px)', letterSpacing: '-3px' }}>
-        Influentes.<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.28)' }}>Turma I.</em>
+        Influentes.<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.40)' }}>Turma I.</em>
       </h2>
-      <p className="font-mono-brand text-[11px] leading-[1.7] tracking-[0.3px] mt-6" style={{ color: 'rgba(240,237,230,0.28)' }}>
+      <p className="font-mono-brand text-[11px] leading-[1.7] tracking-[0.3px] mt-6" style={{ color: 'rgba(240,237,230,0.40)' }}>
         30 vagas por turma. Seleção por candidatura. Faturamento mínimo R$10M.
       </p>
     </div>
 
     <div className="relative z-[1]" style={{ border: '1px solid rgba(240,237,230,0.08)', borderTop: '2px solid hsl(42 33% 92%)' }}>
       <div className="p-9">
-        <div className="font-mono-brand text-[9px] tracking-[3px] uppercase mb-5" style={{ color: 'rgba(240,237,230,0.2)' }}>Resumo</div>
+        <div className="font-mono-brand text-[9px] tracking-[3px] uppercase mb-5" style={{ color: 'rgba(240,237,230,0.55)' }}>Resumo</div>
         <div className="flex flex-col">
           {specs.map(([k, v], i) => (
             <div key={i} className="flex justify-between items-baseline gap-4 py-[11px] text-[12.5px]" style={{ borderBottom: i < specs.length - 1 ? '1px solid rgba(240,237,230,0.04)' : 'none' }}>
-              <span className="font-light" style={{ color: 'rgba(240,237,230,0.25)' }}>{k}</span>
-              <span className="font-mono-brand text-[11px] font-medium" style={{ color: 'rgba(240,237,230,0.65)' }}>{v}</span>
+              <span className="font-light" style={{ color: 'rgba(240,237,230,0.60)' }}>{k}</span>
+              <span className="font-mono-brand text-[11px] font-medium" style={{ color: 'rgba(240,237,230,0.85)' }}>{v}</span>
             </div>
           ))}
         </div>

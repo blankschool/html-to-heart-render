@@ -51,9 +51,9 @@ const MercadoSection = () => {
       <h2 className="font-serif-body font-normal leading-[1.15] text-cream mb-12" style={{ fontSize: 'clamp(26px, 3vw, 42px)', letterSpacing: '-0.5px' }}>
         O mercado não compra<br />
         do melhor. Compra de<br />
-        <em className="italic" style={{ color: 'rgba(240,237,230,0.35)' }}>quem lembra.</em>
+        <em className="italic" style={{ color: 'rgba(240,237,230,0.60)' }}>quem lembra.</em>
       </h2>
-      <p className="text-[15px] font-light leading-[1.85] max-w-[520px]" style={{ color: 'rgba(240,237,230,0.85)' }}>
+      <p className="text-[15px] font-light leading-[1.85] max-w-[520px]" style={{ color: 'rgba(240,237,230,0.93)' }}>
         Quando a sua presença se torna consistente, os efeitos aparecem em quatro frentes do negócio:
       </p>
 
@@ -77,7 +77,7 @@ const MercadoSection = () => {
                 <f.Icon color={iconColor} />
               </div>
               <div className="text-[14px] font-medium text-cream mb-2.5">{f.title}</div>
-              <p className="text-[13px] font-light leading-[1.75]" style={{ color: 'rgba(240,237,230,0.82)' }}>{f.body}</p>
+              <p className="text-[13px] font-light leading-[1.75]" style={{ color: 'rgba(240,237,230,0.92)' }}>{f.body}</p>
             </div>
           );
         })}

@@ -1,5 +1,5 @@
 const Eyebrow = ({ children }: { children: React.ReactNode }) => (
-  <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-10" style={{ color: 'rgba(240,237,230,0.5)' }}>
+  <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-10" style={{ color: 'rgba(240,237,230,0.72)' }}>
     <span className="w-5 h-px flex-shrink-0" style={{ background: 'rgba(240,237,230,0.3)' }} />
     {children}
   </div>
@@ -39,21 +39,21 @@ const BaseOperacionalSection = () => (
           style={{ fontSize: 'clamp(40px, 4.5vw, 76px)', letterSpacing: '-2.5px' }}
         >
           Tudo que foi<br />construído,<br />
-          <em className="italic" style={{ color: 'rgba(240,237,230,0.28)' }}>
+          <em className="italic" style={{ color: 'rgba(240,237,230,0.40)' }}>
             dentro da empresa.
           </em>
         </h2>
 
         <p
           className="text-[15px] font-light leading-[1.85] mb-10"
-          style={{ color: 'rgba(240,237,230,0.82)', maxWidth: '420px' }}
+          style={{ color: 'rgba(240,237,230,0.92)', maxWidth: '420px' }}
         >
           Cada sessão, cada decisão e cada roteiro do programa fica registrado em uma plataforma estruturada pela Blank. No encerramento, esse acervo é transferido integralmente para a empresa. O time não depende da memória de ninguém.
         </p>
 
         <div
           className="font-mono-brand text-[10px] tracking-[0.5px] leading-[1.6] italic"
-          style={{ color: 'rgba(240,237,230,0.35)' }}
+          style={{ color: 'rgba(240,237,230,0.60)' }}
         >
           Acesso permanente — sem prazo de expiração.
         </div>

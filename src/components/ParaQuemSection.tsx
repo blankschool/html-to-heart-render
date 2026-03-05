@@ -1,5 +1,5 @@
 const Eyebrow = ({ children }: { children: React.ReactNode }) => (
-  <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-6" style={{ color: 'rgba(240,237,230,0.5)' }}>
+  <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-6" style={{ color: 'rgba(240,237,230,0.72)' }}>
     <span className="w-5 h-px flex-shrink-0" style={{ background: 'rgba(240,237,230,0.3)' }} />
     {children}
   </div>
@@ -21,18 +21,18 @@ const ParaQuemSection = () => (
       <div>
         <Eyebrow>Para quem é o programa</Eyebrow>
         <h2 className="font-display font-normal leading-[0.96] text-cream mb-6" style={{ fontSize: 'clamp(40px, 5vw, 72px)', letterSpacing: '-2px' }}>
-          Para quem tem algo<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.3)' }}>de valor para dizer.</em>
+          Para quem tem algo<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.40)' }}>de valor para dizer.</em>
         </h2>
-        <p className="text-[15px] font-light leading-[1.75]" style={{ color: 'rgba(240,237,230,0.82)' }}>
+        <p className="text-[15px] font-light leading-[1.75]" style={{ color: 'rgba(240,237,230,0.92)' }}>
           O cohort é composto por empresários e sócios-fundadores com operações estabelecidas. A curadoria da turma é parte do valor: empresas de setores complementares, com substância para construir estratégias que se somam.
         </p>
       </div>
       <div>
-        <div className="font-mono-brand text-[9px] tracking-[3px] uppercase mb-5" style={{ color: 'rgba(240,237,230,0.45)' }}>Perfil</div>
+        <div className="font-mono-brand text-[9px] tracking-[3px] uppercase mb-5" style={{ color: 'rgba(240,237,230,0.68)' }}>Perfil</div>
         <div className="flex flex-col" style={{ border: '1px solid rgba(240,237,230,0.08)' }}>
           {specs.map(([k, v], i) => (
             <div key={i} className="flex justify-between items-baseline gap-4 py-[15px] px-5 text-[13px]" style={{ borderBottom: i < specs.length - 1 ? '1px solid rgba(240,237,230,0.08)' : 'none' }}>
-              <span className="font-light" style={{ color: 'rgba(240,237,230,0.55)' }}>{k}</span>
+              <span className="font-light" style={{ color: 'rgba(240,237,230,0.78)' }}>{k}</span>
               <span className="font-medium text-cream text-right font-mono-brand text-[12px]">{v}</span>
             </div>
           ))}

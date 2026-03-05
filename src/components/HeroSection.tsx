@@ -101,24 +101,24 @@ const HeroSection = () => {
 
       <div className="relative z-[3] px-6 pb-[60px] md:px-[52px] md:pb-20 grid grid-cols-1 md:grid-cols-2 gap-0 items-end">
         <div>
-          <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase mb-7 flex items-center gap-3.5" style={{ color: 'rgba(240,237,230,0.55)' }}>
+          <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase mb-7 flex items-center gap-3.5" style={{ color: 'rgba(240,237,230,0.78)' }}>
             <div className="w-7 h-px flex-shrink-0" style={{ background: 'rgba(240,237,230,0.3)' }} />
             INFLUENTES | FOUNDERS PROGRAM BLANK
           </div>
           <h1 className="font-display text-cream font-normal leading-[0.93] tracking-[-3px]" style={{ fontSize: 'clamp(48px, 7vw, 100px)' }}>
             Você não usa<br />
             seu canal mais<br />
-            <em className="italic" style={{ color: 'rgba(240,237,230,0.28)' }}>lucrativo:</em><br />
+            <em className="italic" style={{ color: 'rgba(240,237,230,0.40)' }}>lucrativo:</em><br />
             a sua marca pessoal
           </h1>
         </div>
         <div className="md:pl-16 md:border-l border-t md:border-t-0 pt-9 md:pt-0 flex flex-col justify-end gap-8" style={{ borderColor: 'rgba(240,237,230,0.08)' }}>
-          <p className="text-[15px] font-light leading-[1.85] max-w-[360px]" style={{ color: 'rgba(240,237,230,0.85)' }}>
+          <p className="text-[15px] font-light leading-[1.85] max-w-[360px]" style={{ color: 'rgba(240,237,230,0.93)' }}>
             Em 120 dias, a Blank desenha o seu posicionamento, capacita o seu time e instala uma operação dentro do seu negócio que gera receita através das suas redes sociais.
           </p>
           <div className="flex flex-col gap-3.5">
             <a href="#investimento" className="inline-block font-mono-brand text-[11px] font-medium tracking-[2px] uppercase bg-cream text-ink py-4 px-8 no-underline text-center transition-opacity hover:opacity-85">Enviar Aplicação</a>
-            <a href="#estrutura" className="font-mono-brand text-[11px] tracking-[0.5px] no-underline flex items-center gap-2 transition-colors hover:text-cream" style={{ color: 'rgba(240,237,230,0.5)' }}>Como funciona →</a>
+            <a href="#estrutura" className="font-mono-brand text-[11px] tracking-[0.5px] no-underline flex items-center gap-2 transition-colors hover:text-cream" style={{ color: 'rgba(240,237,230,0.72)' }}>Como funciona →</a>
           </div>
         </div>
       </div>

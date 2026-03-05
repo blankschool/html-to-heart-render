@@ -21,9 +21,9 @@ const FAQSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-[260px_1fr] gap-12 md:gap-20">
         <div>
           <h2 className="font-display text-[36px] font-normal text-cream leading-none mb-3.5" style={{ letterSpacing: '-1.5px' }}>
-            Perguntas<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.3)' }}>frequentes.</em>
+            Perguntas<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.40)' }}>frequentes.</em>
           </h2>
-          <p className="font-mono-brand text-[11px] leading-[1.7] mt-3.5" style={{ color: 'rgba(240,237,230,0.55)' }}>Todas as suas dúvidas esclarecidas para tomar uma decisão.</p>
+          <p className="font-mono-brand text-[11px] leading-[1.7] mt-3.5" style={{ color: 'rgba(240,237,230,0.78)' }}>Todas as suas dúvidas esclarecidas para tomar uma decisão.</p>
         </div>
         <div style={{ borderTop: '1px solid rgba(240,237,230,0.08)' }}>
           {faqs.map((f, i) => (
@@ -40,7 +40,7 @@ const FAQSection = () => {
                 >+</span>
               </button>
               {openIdx === i && (
-                <div className="text-[13px] font-light leading-[1.85] pb-[18px]" style={{ color: 'rgba(240,237,230,0.78)' }}>
+                <div className="text-[13px] font-light leading-[1.85] pb-[18px]" style={{ color: 'rgba(240,237,230,0.90)' }}>
                   {f.a}
                 </div>
               )}
