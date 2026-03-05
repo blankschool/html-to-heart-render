@@ -40,7 +40,6 @@ const CasesSection = () => (
 
     <div className="mt-10 flex flex-wrap items-center gap-4">
       <a href="#investimento" className="font-mono-brand text-[11px] font-medium tracking-[2px] uppercase bg-cream text-ink py-4 px-8 no-underline transition-opacity hover:opacity-85">Enviar Aplicação</a>
-      <a href="#investimento" className="font-mono-brand text-[11px] tracking-[1px] uppercase no-underline py-4 px-8 transition-opacity hover:opacity-70" style={{ border: '1px solid rgba(240,237,230,0.18)', color: 'rgba(240,237,230,0.6)' }}>Falar com Especialista</a>
     </div>
   </section>
 );

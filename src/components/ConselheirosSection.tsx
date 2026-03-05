@@ -54,9 +54,6 @@ const ConselheirosSection = () => (
       ))}
     </div>
 
-    <div className="mt-10 flex justify-start">
-      <a href="#investimento" className="font-mono-brand text-[11px] tracking-[1px] uppercase no-underline py-4 px-8 transition-opacity hover:opacity-70" style={{ border: '1px solid rgba(240,237,230,0.18)', color: 'rgba(240,237,230,0.6)' }}>Falar com Especialista</a>
-    </div>
   </section>
 );
 

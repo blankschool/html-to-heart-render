@@ -39,7 +39,7 @@ const InvestimentoSection = () => (
         <div className="font-display text-[50px] font-normal text-cream leading-none mb-1.5" style={{ letterSpacing: '-2px' }}>R$ 100.000</div>
         <div className="font-mono-brand text-[11px] mb-9" style={{ color: 'rgba(240,237,230,0.78)' }}>Parcelamento disponível | Consulte condições</div>
         <a href="#" className="block w-full py-4 text-center font-mono-brand text-[11px] font-medium tracking-[2px] uppercase bg-cream text-ink no-underline transition-opacity hover:opacity-[0.88] mb-3">Enviar Aplicação</a>
-        <div className="font-mono-brand text-[10px] text-center leading-[1.6]" style={{ color: 'rgba(240,237,230,0.60)' }}>Por candidatura · R$10M+ de faturamento · 30 vagas por turma</div>
+        <div className="font-mono-brand text-[10px] text-center leading-[1.6]" style={{ color: 'rgba(240,237,230,0.60)' }}>Por candidatura · R$10M+ de faturamento · 30 vagas</div>
       </div>
       <div className="p-[48px_24px] md:p-[48px_44px] flex flex-col justify-between gap-7">
         <div className="grid grid-cols-1 md:grid-cols-2">

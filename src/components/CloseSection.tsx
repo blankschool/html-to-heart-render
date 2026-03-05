@@ -22,10 +22,10 @@ const CloseSection = () => (
 
     <div className="relative z-[1]">
       <h2 className="font-display font-normal leading-[0.93] text-cream mb-6" style={{ fontSize: 'clamp(44px, 6vw, 82px)', letterSpacing: '-3px' }}>
-        Influentes.<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.40)' }}>Turma I.</em>
+        Influentes.<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.40)' }}>Founders Program.</em>
       </h2>
       <p className="font-mono-brand text-[11px] leading-[1.7] tracking-[0.3px] mt-6" style={{ color: 'rgba(240,237,230,0.40)' }}>
-        30 vagas por turma. Seleção por candidatura. Faturamento mínimo R$10M.
+        30 vagas. Seleção por candidatura. Faturamento mínimo R$10M.
       </p>
     </div>
 
@@ -43,7 +43,7 @@ const CloseSection = () => (
       </div>
       <div className="p-[24px_36px]" style={{ borderTop: '1px solid rgba(240,237,230,0.08)', background: 'rgba(240,237,230,0.015)' }}>
         <a href="#" className="block w-full py-[17px] text-center font-mono-brand text-[11px] font-medium tracking-[2px] uppercase bg-cream text-ink no-underline transition-opacity hover:opacity-[0.88] mb-2.5">Enviar Aplicação</a>
-        <div className="font-mono-brand text-[9px] text-center tracking-[0.5px]" style={{ color: 'rgba(240,237,230,0.12)' }}>Entrada por candidatura · 30 vagas · Turma I</div>
+        <div className="font-mono-brand text-[9px] text-center tracking-[0.5px]" style={{ color: 'rgba(240,237,230,0.12)' }}>Entrada por candidatura · 30 vagas</div>
       </div>
     </div>
   </section>

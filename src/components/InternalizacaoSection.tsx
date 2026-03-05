@@ -18,6 +18,8 @@ const deliverables = [
   'Como criar novos roteiros com o método',
   'Métricas que importam e como interpretá-las',
   'Protocolo de decisão quando os resultados variarem',
+  'Acesso a Certificação em Social Media para o time',
+  'IA personalizada com seus posts',
 ];
 
 const InternalizacaoSection = () => (

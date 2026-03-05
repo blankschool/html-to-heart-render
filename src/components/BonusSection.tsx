@@ -30,7 +30,7 @@ const BonusSection = () => (
   <section className="py-[72px] px-6 md:py-[100px] md:px-[52px] bg-ink" style={{ borderBottom: '1px solid rgba(240,237,230,0.08)' }}>
     <Eyebrow>Bônus de Inauguração</Eyebrow>
     <h2 className="font-display font-normal leading-[0.96] text-cream mb-4" style={{ fontSize: 'clamp(36px, 4.5vw, 64px)', letterSpacing: '-2px' }}>
-      Bônus de Inauguração<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.40)' }}>Exclusivos Turma 01</em>
+      Bônus de<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.40)' }}>Inauguração.</em>
     </h2>
     <p className="text-[15px] font-light leading-[1.85] max-w-[520px] mb-14" style={{ color: 'rgba(240,237,230,0.92)' }}>
       As primeiras vagas garantem benefícios exclusivos além do programa. Quanto antes você decidir, mais você leva.

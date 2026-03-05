@@ -17,7 +17,7 @@ const pilares: { track: Track; num: string; title: string; body: string; when: s
   { track: 'ind', num: '08', title: '3 revisões 1:1', body: 'Balanço individual com consultor.', when: 'Meses 3–4' },
   { track: 'ind', num: '09', title: 'Call de internalização — 3h', body: 'Transferência total do método.', when: 'Mês 4' },
   { track: 'col', num: '10', title: 'Comunidade do cohort', body: 'Collabs estratégicas de conteúdo, oportunidades.', when: 'Meses 1–4' },
-  { track: 'col', num: '11', title: 'Encontro presencial', body: 'Um dia com toda a turma.', when: 'Pós-programa' },
+  { track: 'col', num: '11', title: 'Encontro presencial', body: 'Um dia com todo o cohort.', when: 'Pós-programa' },
   { track: 'adv', num: '12', title: 'Mentorias com conselheiros', body: 'Rony, Renata e Erich ao vivo.', when: 'Todo mês' },
 ];
 

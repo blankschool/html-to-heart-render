@@ -5,11 +5,11 @@ const faqs = [
   { q: 'Quem da empresa precisa participar?', a: 'Você e ao menos uma pessoa de marketing. O time participa das mentorias operacionais; você das sessões estratégicas e com conselheiros. O restante roda sem demandar sua agenda.' },
   { q: 'Qual a demanda de tempo para o fundador?', a: 'Mês 1: ~3h para onboarding e validação do plano. Meses 2–4: uma mentoria por mês + 2 revisões 1:1 + sessões com conselheiros. O encontro presencial é pós-programa, não durante.' },
   { q: 'O encontro presencial é durante o programa?', a: 'Não. Acontece 1 a 2 meses após o encerramento, quando você já operou de forma autônoma. A Blank realiza 3 encontros por ano e cada ex-aluno tem direito a 1 acesso por ano.' },
-  { q: 'O que o encontro presencial inclui?', a: 'Networking com ex-alunos de todas as turmas, mentoria presencial com os conselheiros, sessão de análise coletiva com a Blank e bloco de produção de conteúdo ao vivo com feedback imediato.' },
+  { q: 'O que o encontro presencial inclui?', a: 'Networking com ex-alunos de todos os cohorts, mentoria presencial com os conselheiros, sessão de análise coletiva com a Blank e bloco de produção de conteúdo ao vivo com feedback imediato.' },
   { q: 'O que acontece ao fim dos 120 dias?', a: 'Time treinado, operação rodando e documentação completa dentro da empresa. O Membership pós-programa é opcional e sem contrato mínimo.' },
   { q: 'Como funciona o processo de seleção?', a: 'Aplicação online + entrevista com a Blank. Critérios: faturamento acima de R$ 5M e ao menos 1 profissional de marketing no time. Setores são curados por complementaridade dentro do cohort.' },
   { q: 'O que é o Membership pós-programa?', a: 'Acesso à comunidade, capacitações mensais e mentorias após o encerramento. Opcional, sem contrato mínimo. Mais detalhes são apresentados no encerramento do programa.' },
-  { q: 'Como funciona a trilha coletiva?', a: 'As 30 empresas têm acesso a um ambiente compartilhado para troca de feedback, análise cruzada de resultados e propostas de parceria. As sessões com conselheiros são abertas para perguntas de toda a turma.' },
+  { q: 'Como funciona a trilha coletiva?', a: 'As 30 empresas têm acesso a um ambiente compartilhado para troca de feedback, análise cruzada de resultados e propostas de parceria. As sessões com conselheiros são abertas para perguntas de todo o cohort.' },
   { q: 'O método funciona para qualquer setor?', a: 'Sim. O Influentes é construído sobre princípios de posicionamento que se aplicam independente do setor. A curadoria do cohort garante que os setores se complementem — não que sejam todos iguais.' },
 ];
 

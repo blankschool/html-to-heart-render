@@ -24,7 +24,7 @@ const ParaQuemSection = () => (
           Para quem tem algo<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.40)' }}>de valor para dizer.</em>
         </h2>
         <p className="text-[15px] font-light leading-[1.75]" style={{ color: 'rgba(240,237,230,0.92)' }}>
-          O cohort é composto por empresários e sócios-fundadores com operações estabelecidas. A curadoria da turma é parte do valor: empresas de setores complementares, com substância para construir estratégias que se somam.
+          O cohort é composto por empresários e sócios-fundadores com operações estabelecidas. A curadoria do cohort é parte do valor: empresas de setores complementares, com substância para construir estratégias que se somam.
         </p>
       </div>
       <div>
@@ -42,7 +42,6 @@ const ParaQuemSection = () => (
 
     <div className="mt-10 flex flex-wrap items-center gap-4">
       <a href="#investimento" className="font-mono-brand text-[11px] font-medium tracking-[2px] uppercase bg-cream text-ink py-4 px-8 no-underline transition-opacity hover:opacity-85">Enviar Aplicação</a>
-      <a href="#investimento" className="font-mono-brand text-[11px] tracking-[1px] uppercase no-underline py-4 px-8 transition-opacity hover:opacity-70" style={{ border: '1px solid rgba(240,237,230,0.18)', color: 'rgba(240,237,230,0.6)' }}>Falar com Especialista</a>
     </div>
   </section>
 );
