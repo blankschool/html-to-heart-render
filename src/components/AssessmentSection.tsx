@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 
 const Eyebrow = ({ children }: { children: React.ReactNode }) => (
-  <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-6" style={{ color: 'rgba(240,237,230,0.2)' }}>
-    <span className="w-5 h-px flex-shrink-0" style={{ background: 'rgba(240,237,230,0.12)' }} />
+  <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-6" style={{ color: 'rgba(240,237,230,0.5)' }}>
+    <span className="w-5 h-px flex-shrink-0" style={{ background: 'rgba(240,237,230,0.3)' }} />
     {children}
   </div>
 );
@@ -26,16 +26,24 @@ const AssessmentSection = () => {
 
   return (
     <section className="py-[72px] px-6 md:py-[100px] md:px-[52px] bg-ink-3" style={{ borderBottom: '1px solid rgba(240,237,230,0.08)' }}>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-end mb-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-end mb-[52px]">
         <div>
-          <Eyebrow>Assessment do time</Eyebrow>
+          <Eyebrow>Como funciona — Assessment do time</Eyebrow>
           <h2 className="font-display font-normal leading-[0.96] text-cream" style={{ fontSize: 'clamp(40px, 5vw, 72px)', letterSpacing: '-2px' }}>
-            Antes de treinar,<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.3)' }}>a Blank diagnóstica.</em>
+            Antes de treinar,<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.3)' }}>a Blank diagnostica.</em>
           </h2>
         </div>
-        <p className="text-[15px] font-light leading-[1.85] pt-0 md:pt-[52px]" style={{ color: 'rgba(240,237,230,0.42)' }}>
-          A maioria dos programas ensina o mesmo método para todo mundo. O Influentes começa entendendo o ponto de partida do seu time — e calibra o treinamento de acordo.
-        </p>
+        <div className="pt-0 md:pt-[52px]">
+          <p className="text-[15px] font-light leading-[1.85]" style={{ color: 'rgba(240,237,230,0.82)' }}>
+            A maioria dos programas ensina o mesmo método para todo mundo. O Influentes começa entendendo o ponto de partida do seu time — e calibra o treinamento de acordo.
+          </p>
+          <div className="mt-6 p-[20px_24px]" style={{ border: '1px solid rgba(240,237,230,0.08)', borderTop: '2px solid rgba(240,237,230,0.35)' }}>
+            <div className="font-mono-brand text-[9px] tracking-[3px] uppercase mb-2" style={{ color: 'rgba(240,237,230,0.5)' }}>Resultado do Assessment</div>
+            <p className="text-[13px] font-light leading-[1.7]" style={{ color: 'rgba(240,237,230,0.82)' }}>
+              O time recebe uma trilha personalizada: o que desenvolver primeiro, quais competências priorizar e qual ritmo de evolução é realista para os 120 dias do programa.
+            </p>
+          </div>
+        </div>
       </div>
 
       <div ref={ref} className="grid grid-cols-1 md:grid-cols-3" style={{ gap: '1px', background: 'rgba(240,237,230,0.08)', border: '1px solid rgba(240,237,230,0.08)' }}>
@@ -44,9 +52,9 @@ const AssessmentSection = () => {
             <div className="h-[2px] mb-5 overflow-hidden" style={{ background: 'rgba(240,237,230,0.08)' }}>
               <div className="h-full transition-all duration-600 ease-out" style={{ width: visible ? n.width : '0%', background: `rgba(240,237,230,${n.opacity})` }} />
             </div>
-            <div className="font-mono-brand text-[9px] tracking-[2.5px] uppercase mb-3" style={{ color: 'rgba(240,237,230,0.2)' }}>{n.tag}</div>
-            <div className="text-[16px] font-medium mb-2.5" style={{ color: 'rgba(240,237,230,0.65)' }}>{n.title}</div>
-            <p className="text-[12.5px] font-light leading-[1.7]" style={{ color: 'rgba(240,237,230,0.32)' }}>{n.body}</p>
+            <div className="font-mono-brand text-[9px] tracking-[2.5px] uppercase mb-3" style={{ color: 'rgba(240,237,230,0.45)' }}>{n.tag}</div>
+            <div className="text-[16px] font-medium mb-2.5" style={{ color: 'rgba(240,237,230,0.9)' }}>{n.title}</div>
+            <p className="text-[12.5px] font-light leading-[1.7]" style={{ color: 'rgba(240,237,230,0.78)' }}>{n.body}</p>
           </div>
         ))}
       </div>

@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 const Eyebrow = ({ children }: { children: React.ReactNode }) => (
-  <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-6" style={{ color: 'rgba(240,237,230,0.2)' }}>
-    <span className="w-5 h-px flex-shrink-0" style={{ background: 'rgba(240,237,230,0.12)' }} />
+  <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-6" style={{ color: 'rgba(240,237,230,0.5)' }}>
+    <span className="w-5 h-px flex-shrink-0" style={{ background: 'rgba(240,237,230,0.3)' }} />
     {children}
   </div>
 );
@@ -19,9 +19,9 @@ interface MonthData {
 
 const months: MonthData[] = [
   {
-    num: 'Mês 01', name: 'A Fundação', verb: 'Construir antes de publicar',
-    panelTitle: <>A Blank constrói.<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.32)' }}>Você valida.</em></>,
-    panelLead: 'O primeiro mês é quase todo da Blank — onboarding, diagnóstico e construção do plano estratégico completo. O empresário aparece para as sessões e valida o que foi produzido.',
+    num: 'Mês 01', name: 'Plano de marca', verb: 'Posicionamento, plano estratégico e capacitação do time.',
+    panelTitle: <>A Blank constrói todo o plano.<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.32)' }}>O empresário valida.</em></>,
+    panelLead: 'A Blank conduz o onboarding, escreve o diagnóstico, o plano estratégico e os primeiros roteiros. O time é treinado. Ao fim das quatro semanas, tudo está pronto para operar.',
     cycleLabel: 'Ritmo das 4 semanas',
     weeks: [
       { type: 'on', label: 'Sem 1', text: 'Onboarding e diagnóstico' },
@@ -30,17 +30,18 @@ const months: MonthData[] = [
       { type: 'on', label: 'Sem 4', text: 'Treinamento do time' },
     ],
     items: [
-      { track: 'ind', title: 'Onboarding e diagnóstico completo', desc: 'Negócio, posicionamento atual, histórico de comunicação e objetivos de receita.' },
-      { track: 'ind', title: 'Planejamento estratégico', desc: 'Posicionamento, funil, linhas editoriais e plano tático. Produzido pela Blank, validado por você.' },
-      { track: 'ind', title: 'Assessment do time', desc: 'Diagnóstico de maturidade com trilha personalizada de desenvolvimento para os 120 dias.' },
-      { track: 'ind', title: '8 roteiros base escritos pela Blank', desc: '2 por linha editorial. O time começa com os melhores formatos do método calibrados ao posicionamento do fundador.' },
-      { track: 'col', title: 'Integração ao cohort', desc: 'Apresentação entre os 30 membros. Mapeamento de complementaridades e sinergias.' },
+      { track: 'ind', title: 'Onboarding e diagnóstico', desc: 'Negócio, posicionamento atual, histórico de comunicação e objetivos de receita.' },
+      { track: 'ind', title: 'Planejamento estratégico completo', desc: 'Posicionamento, funil, linhas editoriais e plano tático dos 4 meses — produzido pela Blank.' },
+      { track: 'ind', title: '8 roteiros base escritos', desc: '2 por linha editorial. O time começa com formatos do método calibrados ao posicionamento do fundador.' },
+      { track: 'ind', title: 'Assessment do time', desc: 'Diagnóstico de maturidade da equipe com trilha personalizada de desenvolvimento.' },
+      { track: 'ind', title: 'Treinamento do time', desc: 'A equipe aprende o método e começa o mês 2 com clareza sobre o que produzir e por quê.' },
+      { track: 'col', title: 'Integração ao cohort', desc: 'Apresentação entre os membros com mapeamento de complementaridades e sinergias.' },
     ],
   },
   {
-    num: 'Mês 02', name: 'A Execução', verb: 'Publicar com suporte real',
-    panelTitle: <>O time publica.<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.32)' }}>A Blank acompanha.</em></>,
-    panelLead: 'Ritmo quinzenal: uma semana a mentoria é com o time, na seguinte é com o empresário. O account manager fica disponível entre as sessões para o que aparecer no dia a dia.',
+    num: 'Mês 02', name: 'Execução assistida', verb: 'Feedbacks e mentorias quinzenais.',
+    panelTitle: <>O time produz.<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.32)' }}>A Blank acompanha.</em></>,
+    panelLead: 'Ritmo quinzenal: uma semana a mentoria é com o time, na seguinte é com o empresário. O account manager fica disponível entre as sessões.',
     cycleLabel: 'Ciclo quinzenal',
     weeks: [
       { type: 'on', label: 'Sem A', text: 'Mentoria com o time' },
@@ -49,16 +50,17 @@ const months: MonthData[] = [
       { type: '', label: 'Sem D', text: 'Publicações' },
     ],
     items: [
-      { track: 'ind', title: 'Mentoria quinzenal com o time', desc: 'Revisão do que foi publicado, ajuste de execução e direcionamento.' },
-      { track: 'ind', title: 'Mentoria quinzenal com o empresário', desc: 'Alinhamento estratégico — posicionamento e decisões que impactam a comunicação.' },
+      { track: 'ind', title: 'Mentoria quinzenal coletiva com o time', desc: 'Revisão das publicações, análise de desempenho, ajuste de execução e direcionamento.' },
+      { track: 'ind', title: 'Mentoria quinzenal coletiva com o empresário', desc: 'Conversa estratégica sobre posicionamento e decisões que afetam a comunicação.' },
       { track: 'ind', title: 'Account manager dedicado', desc: 'Disponível nos 120 dias para alinhamentos entre as sessões formais.' },
-      { track: 'col', title: 'Comunidade ativa do cohort', desc: 'Feedback entre pares, análise cruzada de resultados e propostas de parceria.' },
+      { track: 'col', title: 'Comunidade ativa do cohort', desc: 'Feedback cruzado, análise comparada de resultados e propostas de parceria entre membros.' },
+      { track: 'ind', title: 'Plataforma de documentação', desc: 'Toda a inteligência do projeto registrada e acessível para o time operar.' },
     ],
   },
   {
-    num: 'Mês 03', name: 'A Calibração', verb: 'Ajustar com dados reais',
-    panelTitle: <>Dois meses de dados.<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.32)' }}>O plano evolui.</em></>,
-    panelLead: 'Com dois meses publicados, as hipóteses do mês 1 se tornam evidência. O terceiro mês é de ajuste com base no que funcionou — e é quando acontece a primeira revisão 1:1 com o consultor.',
+    num: 'Mês 03', name: 'Ajuste tático', verb: 'Refinamento com base em dados.',
+    panelTitle: <>Dois meses de dados.<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.32)' }}>O plano evolui com eles.</em></>,
+    panelLead: 'Com dois meses de dados, as hipóteses do planejamento inicial têm resposta concreta. O plano é ajustado.',
     cycleLabel: 'Ciclo do mês 3',
     weeks: [
       { type: 'on', label: 'Sem A', text: 'Mentoria com o time' },
@@ -67,16 +69,16 @@ const months: MonthData[] = [
       { type: 'sp', label: 'Sem D', text: 'Sessão conselheiro' },
     ],
     items: [
-      { track: 'ind', title: 'Ciclo quinzenal com ajustes baseados em dados', desc: 'Com métricas reais, a mentoria calibra formato, cadência e ângulo editorial.' },
-      { track: 'ind', title: 'Primeira revisão 1:1', desc: 'Balanço dos 3 meses e ajuste do plano para o encerramento.' },
-      { track: 'col', title: 'Encontro presencial do cohort', desc: 'Um dia com toda a turma — análise coletiva e produção de conteúdo ao vivo.' },
-      { track: 'adv', title: 'Sessão ao vivo com conselheiro', desc: 'Conversa aberta sobre como cada conselheiro construiu presença que gera negócio.' },
+      { track: 'ind', title: 'Ciclo quinzenal com ajustes baseados em dados', desc: 'Com métricas reais, a mentoria trabalha calibração de formato, cadência e ângulo editorial.' },
+      { track: 'ind', title: 'Primeira revisão 1:1', desc: 'Balanço dos três meses e ajuste do plano para o encerramento.' },
+      { track: 'adv', title: 'Sessão ao vivo com conselheiro', desc: 'Conversa aberta sobre como cada conselheiro construiu presença que gera negócio de verdade.' },
+      { track: 'ind', title: 'Revisão 1:1 final', desc: 'Balanço dos 60 dias e reajuste do plano para garantir o resultado até o final do projeto.' },
     ],
   },
   {
-    num: 'Mês 04', name: 'A Passagem', verb: 'A Blank sai. O método fica.',
-    panelTitle: <>A Blank sai.<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.32)' }}>O método fica.</em></>,
-    panelLead: 'O objetivo do quarto mês é garantir que tudo que foi construído viva dentro da empresa sem a Blank. Uma sessão de 3 horas transfere o método, as decisões e a documentação para o time.',
+    num: 'Mês 04', name: 'Handover completo', verb: 'O time opera com autonomia.',
+    panelTitle: <>A Blank faz o handover completo.<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.32)' }}>O time está pronto para tudo.</em></>,
+    panelLead: 'A call de internalização de 3h transfere o método, os processos e toda a documentação para o time. Você termina o programa com capacidade estruturada para replicar tudo que aprendeu.',
     cycleLabel: 'Ciclo do mês 4',
     weeks: [
       { type: 'on', label: 'Sem A', text: 'Mentoria com o time' },
@@ -85,23 +87,23 @@ const months: MonthData[] = [
       { type: 'gold', label: 'Sem D', text: 'Internalização 3h' },
     ],
     items: [
-      { track: 'ind', title: 'Call de internalização — 3 horas', desc: 'Transferência estruturada de toda a inteligência do programa para o time interno.' },
+      { track: 'ind', title: 'Call de internalização — 3 horas', desc: 'Transferência do método, processos e documentação para o time. A operação passa a ser inteiramente do cliente.' },
       { track: 'ind', title: 'Revisão 1:1 final', desc: 'Balanço dos 120 dias e plano de operação autônoma para os meses seguintes.' },
       { track: 'ind', title: 'Documentação completa entregue', desc: 'Diagnóstico, plano, roteiros e decisões dos 120 dias. Dentro da empresa para sempre.' },
-      { track: 'adv', title: 'Segunda sessão com conselheiro', desc: 'Em 4 meses, contato com dois dos três conselheiros ao vivo.' },
+      { track: 'adv', title: 'Sessão com conselheiro', desc: 'Rotação mensal permanente: todos os membros têm acesso aos três conselheiros ao longo do programa.' },
     ],
   },
 ];
 
 const dotColors: Record<Track, string> = { ind: 'rgba(240,237,230,0.6)', col: 'rgba(240,237,230,0.25)', adv: 'rgba(212,200,154,0.5)' };
 const trackLabels: Record<Track, string> = { ind: 'Individual', col: 'Coletiva', adv: 'Conselheiro' };
-const trackLabelColors: Record<Track, string> = { ind: 'rgba(240,237,230,0.3)', col: 'rgba(240,237,230,0.18)', adv: 'rgba(212,200,154,0.25)' };
+const trackLabelColors: Record<Track, string> = { ind: 'rgba(240,237,230,0.5)', col: 'rgba(240,237,230,0.3)', adv: 'rgba(212,200,154,0.4)' };
 
 const cwStyles = (type: CWType) => {
-  if (type === 'on') return { bg: 'rgba(240,237,230,0.05)', borderTop: '2px solid rgba(240,237,230,0.4)', nColor: 'rgba(240,237,230,0.38)', lColor: 'rgba(240,237,230,0.65)', lWeight: 500 };
-  if (type === 'sp') return { bg: 'rgba(240,237,230,0.03)', borderTop: '2px solid rgba(212,200,154,0.4)', nColor: 'rgba(212,200,154,0.3)', lColor: 'rgba(212,200,154,0.5)', lWeight: 400 };
-  if (type === 'gold') return { bg: 'rgba(240,237,230,0.05)', borderTop: '2px solid rgba(212,200,154,0.6)', nColor: 'rgba(240,237,230,0.38)', lColor: 'rgba(240,237,230,0.65)', lWeight: 500 };
-  return { bg: 'rgba(240,237,230,0.02)', borderTop: '2px solid transparent', nColor: 'rgba(240,237,230,0.12)', lColor: 'rgba(240,237,230,0.18)', lWeight: 400 };
+  if (type === 'on') return { bg: 'rgba(240,237,230,0.05)', borderTop: '2px solid rgba(240,237,230,0.4)', nColor: 'rgba(240,237,230,0.38)', lColor: 'rgba(240,237,230,0.85)', lWeight: 500 };
+  if (type === 'sp') return { bg: 'rgba(240,237,230,0.03)', borderTop: '2px solid rgba(212,200,154,0.4)', nColor: 'rgba(212,200,154,0.3)', lColor: 'rgba(212,200,154,0.7)', lWeight: 400 };
+  if (type === 'gold') return { bg: 'rgba(240,237,230,0.05)', borderTop: '2px solid rgba(212,200,154,0.6)', nColor: 'rgba(240,237,230,0.38)', lColor: 'rgba(240,237,230,0.85)', lWeight: 500 };
+  return { bg: 'rgba(240,237,230,0.02)', borderTop: '2px solid transparent', nColor: 'rgba(240,237,230,0.25)', lColor: 'rgba(240,237,230,0.55)', lWeight: 400 };
 };
 
 const JornadaSection = () => {
@@ -114,15 +116,14 @@ const JornadaSection = () => {
         <div>
           <Eyebrow>A jornada</Eyebrow>
           <h2 className="font-display font-normal leading-[0.96] text-cream" style={{ fontSize: 'clamp(40px, 5vw, 72px)', letterSpacing: '-2px' }}>
-            Quatro meses.<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.3)' }}>Cada fase com</em><br /><em className="italic" style={{ color: 'rgba(240,237,230,0.3)' }}>um propósito.</em>
+            Quatro meses,<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.3)' }}>cada um com</em><br /><em className="italic" style={{ color: 'rgba(240,237,230,0.3)' }}>responsabilidades distintas.</em>
           </h2>
         </div>
-        <p className="text-[15px] font-light leading-[1.85] pt-0 md:pt-[52px]" style={{ color: 'rgba(240,237,230,0.42)' }}>
+        <p className="text-[15px] font-light leading-[1.85] pt-0 md:pt-[52px]" style={{ color: 'rgba(240,237,230,0.82)' }}>
           Cada mês tem responsabilidades distintas. O primeiro é quase todo da Blank. Do segundo em diante, o time assume progressivamente — até operar com total autonomia no encerramento.
         </p>
       </div>
 
-      {/* Month nav */}
       <div className="grid grid-cols-2 md:grid-cols-4" style={{ border: '1px solid rgba(240,237,230,0.08)' }}>
         {months.map((mo, i) => (
           <button
@@ -135,20 +136,19 @@ const JornadaSection = () => {
               borderBottom: active === i ? '2px solid hsl(42 33% 92%)' : '2px solid transparent',
             }}
           >
-            <div className="font-mono-brand text-[9px] font-medium tracking-[3px] uppercase mb-2" style={{ color: active === i ? 'rgba(240,237,230,0.45)' : 'rgba(240,237,230,0.18)' }}>{mo.num}</div>
-            <div className="font-serif-body text-[16px] italic leading-none" style={{ color: active === i ? 'hsl(42 33% 92%)' : 'rgba(240,237,230,0.25)' }}>{mo.name}</div>
-            <div className="font-mono-brand text-[9px] mt-[5px] tracking-[0.2px]" style={{ color: active === i ? 'rgba(240,237,230,0.32)' : 'rgba(240,237,230,0.15)' }}>{mo.verb}</div>
+            <div className="font-mono-brand text-[9px] font-medium tracking-[3px] uppercase mb-2" style={{ color: active === i ? 'rgba(240,237,230,0.55)' : 'rgba(240,237,230,0.28)' }}>{mo.num}</div>
+            <div className="font-serif-body text-[15px] italic leading-none mb-1" style={{ color: active === i ? 'hsl(42 33% 92%)' : 'rgba(240,237,230,0.55)' }}>{mo.name}</div>
+            <div className="font-mono-brand text-[9px] mt-[5px] tracking-[0.2px] leading-[1.4]" style={{ color: active === i ? 'rgba(240,237,230,0.55)' : 'rgba(240,237,230,0.3)' }}>{mo.verb}</div>
           </button>
         ))}
       </div>
 
-      {/* Panel */}
       <div className="grid grid-cols-1 md:grid-cols-2" style={{ border: '1px solid rgba(240,237,230,0.08)', borderTop: 'none', background: 'rgba(240,237,230,0.015)' }}>
         <div className="p-[44px_24px] md:p-[44px_40px] flex flex-col gap-6" style={{ borderRight: '1px solid rgba(240,237,230,0.08)' }}>
           <h3 className="font-display font-normal leading-[0.97] text-cream" style={{ fontSize: 'clamp(28px, 3vw, 44px)', letterSpacing: '-1.5px' }}>{m.panelTitle}</h3>
-          <p className="text-[13.5px] font-light leading-[1.85]" style={{ color: 'rgba(240,237,230,0.4)' }}>{m.panelLead}</p>
+          <p className="text-[13.5px] font-light leading-[1.85]" style={{ color: 'rgba(240,237,230,0.82)' }}>{m.panelLead}</p>
           <div>
-            <div className="font-mono-brand text-[9px] font-medium tracking-[3px] uppercase mb-2.5" style={{ color: 'rgba(240,237,230,0.18)' }}>{m.cycleLabel}</div>
+            <div className="font-mono-brand text-[9px] font-medium tracking-[3px] uppercase mb-2.5" style={{ color: 'rgba(240,237,230,0.45)' }}>{m.cycleLabel}</div>
             <div className="grid grid-cols-4 gap-[2px]">
               {m.weeks.map((w, i) => {
                 const s = cwStyles(w.type);
@@ -168,8 +168,8 @@ const JornadaSection = () => {
               <div className="w-2 h-2 rounded-full mt-1 flex-shrink-0" style={{ background: dotColors[item.track] }} />
               <div>
                 <div className="font-mono-brand text-[8px] font-medium tracking-[2px] uppercase mb-1" style={{ color: trackLabelColors[item.track] }}>{trackLabels[item.track]}</div>
-                <div className="text-[12.5px] font-medium mb-1 leading-[1.3]" style={{ color: 'rgba(240,237,230,0.75)' }}>{item.title}</div>
-                <div className="text-[11.5px] font-light leading-[1.6]" style={{ color: 'rgba(240,237,230,0.32)' }}>{item.desc}</div>
+                <div className="text-[12.5px] font-medium mb-1 leading-[1.3]" style={{ color: 'rgba(240,237,230,0.9)' }}>{item.title}</div>
+                <div className="text-[11.5px] font-light leading-[1.6]" style={{ color: 'rgba(240,237,230,0.72)' }}>{item.desc}</div>
               </div>
             </div>
           ))}

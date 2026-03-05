@@ -2,6 +2,8 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import MercadoSection from "@/components/MercadoSection";
 import OQueESection from "@/components/OQueESection";
+import ParaQuemSection from "@/components/ParaQuemSection";
+import BonusSection from "@/components/BonusSection";
 import QuemSomosSection from "@/components/QuemSomosSection";
 import EstruturaSection from "@/components/EstruturaSection";
 import JornadaSection from "@/components/JornadaSection";
@@ -25,6 +27,8 @@ const Index = () => (
     <HeroSection />
     <MercadoSection />
     <OQueESection />
+    <ParaQuemSection />
+    <BonusSection />
     <QuemSomosSection />
     <EstruturaSection />
     <JornadaSection />
