@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Eyebrow = ({ children }: { children: React.ReactNode }) => (
-  <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-6" style={{ color: 'rgba(240,237,230,0.72)' }}>
+  <div className="font-mono-brand text-[12px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-6" style={{ color: 'rgba(240,237,230,0.72)' }}>
     <span className="w-5 h-px flex-shrink-0" style={{ background: 'rgba(240,237,230,0.3)' }} />
     {children}
   </div>
@@ -119,7 +119,7 @@ const JornadaSection = () => {
             Quatro meses,<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.40)' }}>cada um com</em><br /><em className="italic" style={{ color: 'rgba(240,237,230,0.40)' }}>responsabilidades distintas.</em>
           </h2>
         </div>
-        <p className="text-[15px] font-light leading-[1.85] pt-0 md:pt-[52px]" style={{ color: 'rgba(240,237,230,0.92)' }}>
+        <p className="text-[17px] font-light leading-[1.85] pt-0 md:pt-[52px]" style={{ color: 'rgba(240,237,230,0.92)' }}>
           Cada mês tem responsabilidades distintas. O primeiro é quase todo da Blank. Do segundo em diante, o time assume progressivamente — até operar com total autonomia no encerramento.
         </p>
       </div>
@@ -136,9 +136,9 @@ const JornadaSection = () => {
               borderBottom: active === i ? '2px solid hsl(42 33% 92%)' : '2px solid transparent',
             }}
           >
-            <div className="font-mono-brand text-[9px] font-medium tracking-[3px] uppercase mb-2" style={{ color: active === i ? 'rgba(240,237,230,0.55)' : 'rgba(240,237,230,0.28)' }}>{mo.num}</div>
-            <div className="font-serif-body text-[15px] italic leading-none mb-1" style={{ color: active === i ? 'hsl(42 33% 92%)' : 'rgba(240,237,230,0.55)' }}>{mo.name}</div>
-            <div className="font-mono-brand text-[9px] mt-[5px] tracking-[0.2px] leading-[1.4]" style={{ color: active === i ? 'rgba(240,237,230,0.55)' : 'rgba(240,237,230,0.3)' }}>{mo.verb}</div>
+            <div className="font-mono-brand text-[11px] font-medium tracking-[3px] uppercase mb-2" style={{ color: active === i ? 'rgba(240,237,230,0.55)' : 'rgba(240,237,230,0.28)' }}>{mo.num}</div>
+            <div className="font-serif-body text-[17px] italic leading-none mb-1" style={{ color: active === i ? 'hsl(42 33% 92%)' : 'rgba(240,237,230,0.55)' }}>{mo.name}</div>
+            <div className="font-mono-brand text-[11px] mt-[5px] tracking-[0.2px] leading-[1.4]" style={{ color: active === i ? 'rgba(240,237,230,0.55)' : 'rgba(240,237,230,0.3)' }}>{mo.verb}</div>
           </button>
         ))}
       </div>
@@ -146,16 +146,16 @@ const JornadaSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2" style={{ border: '1px solid rgba(240,237,230,0.08)', borderTop: 'none', background: 'rgba(240,237,230,0.015)' }}>
         <div className="p-[44px_24px] md:p-[44px_40px] flex flex-col gap-6" style={{ borderRight: '1px solid rgba(240,237,230,0.08)' }}>
           <h3 className="font-display font-normal leading-[0.97] text-cream" style={{ fontSize: 'clamp(28px, 3vw, 44px)', letterSpacing: '-1.5px' }}>{m.panelTitle}</h3>
-          <p className="text-[13.5px] font-light leading-[1.85]" style={{ color: 'rgba(240,237,230,0.92)' }}>{m.panelLead}</p>
+          <p className="text-[16px] font-light leading-[1.85]" style={{ color: 'rgba(240,237,230,0.92)' }}>{m.panelLead}</p>
           <div>
-            <div className="font-mono-brand text-[9px] font-medium tracking-[3px] uppercase mb-2.5" style={{ color: 'rgba(240,237,230,0.68)' }}>{m.cycleLabel}</div>
+            <div className="font-mono-brand text-[11px] font-medium tracking-[3px] uppercase mb-2.5" style={{ color: 'rgba(240,237,230,0.68)' }}>{m.cycleLabel}</div>
             <div className="grid grid-cols-4 gap-[2px]">
               {m.weeks.map((w, i) => {
                 const s = cwStyles(w.type);
                 return (
                   <div key={i} className="p-[12px_10px]" style={{ background: s.bg, border: '1px solid rgba(240,237,230,0.03)', borderTop: s.borderTop }}>
-                    <div className="font-mono-brand text-[8px] font-medium tracking-[2px] uppercase mb-[5px]" style={{ color: s.nColor }}>{w.label}</div>
-                    <div className="text-[10px] leading-[1.4]" style={{ color: s.lColor, fontWeight: s.lWeight }}>{w.text}</div>
+                    <div className="font-mono-brand text-[10px] font-medium tracking-[2px] uppercase mb-[5px]" style={{ color: s.nColor }}>{w.label}</div>
+                    <div className="text-[12px] leading-[1.4]" style={{ color: s.lColor, fontWeight: s.lWeight }}>{w.text}</div>
                   </div>
                 );
               })}
@@ -167,9 +167,9 @@ const JornadaSection = () => {
             <div key={i} className="grid grid-cols-[8px_1fr] gap-3.5 py-4 items-start" style={{ borderBottom: i < m.items.length - 1 ? '1px solid rgba(240,237,230,0.04)' : 'none' }}>
               <div className="w-2 h-2 rounded-full mt-1 flex-shrink-0" style={{ background: dotColors[item.track] }} />
               <div>
-                <div className="font-mono-brand text-[8px] font-medium tracking-[2px] uppercase mb-1" style={{ color: trackLabelColors[item.track] }}>{trackLabels[item.track]}</div>
-                <div className="text-[12.5px] font-medium mb-1 leading-[1.3]" style={{ color: 'rgba(240,237,230,0.9)' }}>{item.title}</div>
-                <div className="text-[11.5px] font-light leading-[1.6]" style={{ color: 'rgba(240,237,230,0.72)' }}>{item.desc}</div>
+                <div className="font-mono-brand text-[10px] font-medium tracking-[2px] uppercase mb-1" style={{ color: trackLabelColors[item.track] }}>{trackLabels[item.track]}</div>
+                <div className="text-[15px] font-medium mb-1 leading-[1.3]" style={{ color: 'rgba(240,237,230,0.9)' }}>{item.title}</div>
+                <div className="text-[14px] font-light leading-[1.6]" style={{ color: 'rgba(240,237,230,0.72)' }}>{item.desc}</div>
               </div>
             </div>
           ))}

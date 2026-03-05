@@ -3,7 +3,7 @@ import caseSandra from "@/assets/case-sandra.png";
 import caseTony from "@/assets/case-tony.png";
 
 const Eyebrow = ({ children }: { children: React.ReactNode }) => (
-  <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-6" style={{ color: 'rgba(240,237,230,0.72)' }}>
+  <div className="font-mono-brand text-[12px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-6" style={{ color: 'rgba(240,237,230,0.72)' }}>
     <span className="w-5 h-px flex-shrink-0" style={{ background: 'rgba(240,237,230,0.3)' }} />
     {children}
   </div>
@@ -24,7 +24,7 @@ const CasesSection = () => (
           Cases de<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.40)' }}>clientes.</em>
         </h2>
       </div>
-      <p className="text-[15px] font-light leading-[1.85] pt-0 md:pt-[52px]" style={{ color: 'rgba(240,237,230,0.92)' }}>
+      <p className="text-[17px] font-light leading-[1.85] pt-0 md:pt-[52px]" style={{ color: 'rgba(240,237,230,0.92)' }}>
         A Blank gere 34 milhões de seguidores dos principais empresários do Brasil. Os nossos cases provam que o método funciona em fundadores diferentes, em setores diferentes e em estágios distintos de empresa.
       </p>
     </div>
@@ -36,7 +36,7 @@ const CasesSection = () => (
     </div>
 
     <div className="mt-10 flex flex-wrap items-center gap-4">
-      <a href="#investimento" className="font-mono-brand text-[11px] font-medium tracking-[2px] uppercase bg-cream text-ink py-4 px-8 no-underline transition-opacity hover:opacity-85">Enviar Aplicação</a>
+      <a href="#investimento" className="font-mono-brand text-[13px] font-medium tracking-[2px] uppercase bg-cream text-ink py-4 px-8 no-underline transition-opacity hover:opacity-85">Enviar Aplicação</a>
     </div>
   </section>
 );
