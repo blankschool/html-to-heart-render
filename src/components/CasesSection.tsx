@@ -1,3 +1,7 @@
+import caseTallis from "@/assets/case-tallis.png";
+import caseSandra from "@/assets/case-sandra.png";
+import caseTony from "@/assets/case-tony.png";
+
 const Eyebrow = ({ children }: { children: React.ReactNode }) => (
   <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-6" style={{ color: 'rgba(240,237,230,0.72)' }}>
     <span className="w-5 h-px flex-shrink-0" style={{ background: 'rgba(240,237,230,0.3)' }} />
@@ -6,9 +10,9 @@ const Eyebrow = ({ children }: { children: React.ReactNode }) => (
 );
 
 const cases = [
-  { num: '200M alcance / mês', body: 'Atribuído à marca pessoal do fundador. Seu posicionamento nas redes sociais virou o principal vetor de aquisição do G4.', who: 'Tallis Gomes', role: 'Fundador · G4 Educação' },
-  { num: 'Top of mind do seu setor', body: 'Assumimos o perfil com 60 mil seguidores. Em menos de um ano, hoje geramos +286 mil. O mais importante: seu nome se tornou o mais reconhecido no setor de transporte.', who: 'Tony Bernardini', role: 'Fundador Trajeto · CEO Edini Transportes' },
-  { num: '+200 mil seguidores', body: 'Seu número de seguidores estava estagnado em 132 mil por anos. Já no primeiro mês conquistamos mais 50 mil. Em menos de 1 ano alcançamos 325 mil seguidores.', who: 'Sandra Chayo', role: 'Sócia Diretora · HOPE' },
+  { img: caseTallis, alt: 'Tallis Gomes — +200M alcance/mês' },
+  { img: caseSandra, alt: 'Sandra Chayo — +200 mil seguidores' },
+  { img: caseTony, alt: 'Tony Bernardini — Top of mind do seu setor' },
 ];
 
 const CasesSection = () => (
@@ -25,16 +29,9 @@ const CasesSection = () => (
       </p>
     </div>
 
-    <div className="grid grid-cols-1 md:grid-cols-3" style={{ gap: '1px', background: 'rgba(240,237,230,0.08)', border: '1px solid rgba(240,237,230,0.08)' }}>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
       {cases.map((c, i) => (
-        <div key={i} className="bg-ink p-[40px_32px] relative overflow-hidden transition-colors hover:bg-ink-2 group">
-          <div className="absolute top-0 left-0 right-0 h-[2px] bg-transparent transition-colors group-hover:bg-signal/40" />
-          <div className="font-display font-normal text-cream leading-none mb-4" style={{ fontSize: 'clamp(24px, 2.5vw, 36px)', letterSpacing: '-1px' }}>{c.num}</div>
-          <p className="text-[13px] font-light leading-[1.8] mb-7" style={{ color: 'rgba(240,237,230,0.92)' }}>{c.body}</p>
-          <div className="h-px mb-3.5" style={{ background: 'rgba(240,237,230,0.08)' }} />
-          <div className="font-serif-body text-[14px] text-cream">{c.who}</div>
-          <div className="font-mono-brand text-[10px] mt-[3px] tracking-[0.3px]" style={{ color: 'rgba(240,237,230,0.68)' }}>{c.role}</div>
-        </div>
+        <img key={i} src={c.img} alt={c.alt} className="w-full h-auto rounded-lg object-cover" />
       ))}
     </div>
 
