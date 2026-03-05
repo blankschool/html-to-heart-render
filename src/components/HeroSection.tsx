@@ -7,7 +7,7 @@ const HeroSection = () => {
 
   useEffect(() => {
     const MAX_R = 1400;
-    const PERIOD = 14000; // 14 s per cycle — slow, almost static
+    const PERIOD = 14000;
     const start = performance.now();
     let raf: number;
 
@@ -100,19 +100,17 @@ const HeroSection = () => {
       {/* ── Two-column layout ── */}
       <div className="relative z-[3] flex-1 grid grid-cols-1 md:grid-cols-2 min-h-screen">
 
-        {/* Left — photo of conselheiros */}
+        {/* Left — photo */}
         <div className="relative self-end overflow-visible">
           <img
             src="/hero.png"
             alt="Rony Meisler, Renata Vichi e Erich Shibata — Conselheiros Influentes"
             className="w-full h-auto block"
           />
-          {/* Right-edge fade — blends photo into dark background, starts after Erich's text */}
           <div
             className="absolute inset-y-0 right-0 w-[18%] pointer-events-none"
             style={{ background: 'linear-gradient(to right, rgba(12,12,10,0) 0%, rgba(12,12,10,0.88) 100%)' }}
           />
-          {/* Top fade */}
           <div
             className="absolute inset-x-0 top-0 h-[10%] pointer-events-none"
             style={{ background: 'linear-gradient(to bottom, rgba(12,12,10,0.85) 0%, rgba(12,12,10,0) 100%)' }}
@@ -121,7 +119,7 @@ const HeroSection = () => {
 
         {/* Right — content */}
         <div className="flex flex-col justify-end px-6 pb-[60px] md:px-[52px] md:pb-20 pt-10 md:pt-0">
-          <div className="font-mono-brand text-[10px] font-medium tracking-[4px] uppercase mb-7 flex items-center gap-3.5" style={{ color: 'rgba(240,237,230,0.78)' }}>
+          <div className="font-mono-brand text-[12px] font-medium tracking-[4px] uppercase mb-7 flex items-center gap-3.5" style={{ color: 'rgba(240,237,230,0.78)' }}>
             <div className="w-7 h-px flex-shrink-0" style={{ background: 'rgba(240,237,230,0.3)' }} />
             INFLUENTES | FOUNDERS PROGRAM BLANK
           </div>
@@ -133,13 +131,13 @@ const HeroSection = () => {
             a sua marca pessoal
           </h1>
 
-          <p className="text-[15px] font-light leading-[1.85] mb-8" style={{ color: 'rgba(240,237,230,0.93)', maxWidth: '400px' }}>
+          <p className="text-[17px] font-light leading-[1.85] mb-8" style={{ color: 'rgba(240,237,230,0.93)', maxWidth: '420px' }}>
             Em 120 dias, a Blank desenha o seu posicionamento, capacita o seu time e instala uma operação dentro do seu negócio que gera receita através das suas redes sociais.
           </p>
 
           <div className="flex flex-col gap-3.5">
-            <a href="#investimento" className="inline-block font-mono-brand text-[11px] font-medium tracking-[2px] uppercase bg-cream text-ink py-4 px-8 no-underline text-center transition-opacity hover:opacity-85" style={{ maxWidth: '260px' }}>Enviar Aplicação</a>
-            <a href="#estrutura" className="font-mono-brand text-[11px] tracking-[0.5px] no-underline flex items-center gap-2 transition-colors hover:text-cream" style={{ color: 'rgba(240,237,230,0.72)' }}>Como funciona →</a>
+            <a href="#investimento" className="inline-block font-mono-brand text-[13px] font-medium tracking-[2px] uppercase bg-cream text-ink py-4 px-8 no-underline text-center transition-opacity hover:opacity-85" style={{ maxWidth: '280px' }}>Enviar Aplicação</a>
+            <a href="#estrutura" className="font-mono-brand text-[13px] tracking-[0.5px] no-underline flex items-center gap-2 transition-colors hover:text-cream" style={{ color: 'rgba(240,237,230,0.72)' }}>Como funciona →</a>
           </div>
         </div>
 

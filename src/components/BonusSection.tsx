@@ -36,7 +36,7 @@ const BonusSection = () => (
 
     {/* Eyebrow */}
     <div
-      className="relative z-10 font-mono-brand text-[10px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-6"
+      className="relative z-10 font-mono-brand text-[12px] font-medium tracking-[4px] uppercase flex items-center gap-3.5 mb-6"
       style={{ color: 'rgba(10,10,8,0.45)' }}
     >
       <span className="w-5 h-px flex-shrink-0" style={{ background: 'rgba(10,10,8,0.25)' }} />
@@ -53,13 +53,13 @@ const BonusSection = () => (
     </h2>
 
     <p
-      className="relative z-10 text-[15px] font-light leading-[1.85] max-w-[520px] mb-16"
+      className="relative z-10 text-[17px] font-light leading-[1.85] max-w-[520px] mb-16"
       style={{ color: 'rgba(10,10,8,0.65)' }}
     >
       As primeiras vagas garantem benefícios exclusivos além do programa. Quanto antes você decidir, mais você leva.
     </p>
 
-    {/* Cards — dark, inverted, floating */}
+    {/* Cards */}
     <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6">
       {bonuses.map((b, i) => (
         <div
@@ -77,7 +77,6 @@ const BonusSection = () => (
             transform: b.highlight ? 'translateY(-8px)' : 'none',
           }}
         >
-          {/* Top accent bar */}
           <div
             className="absolute top-0 left-0 right-0 h-[2px]"
             style={{
@@ -88,21 +87,21 @@ const BonusSection = () => (
           />
 
           <div
-            className="font-mono-brand text-[10px] tracking-[3px] uppercase mb-5"
+            className="font-mono-brand text-[12px] tracking-[3px] uppercase mb-5"
             style={{ color: b.highlight ? 'rgba(212,200,154,0.75)' : 'rgba(240,237,230,0.35)' }}
           >
             {b.rank}
           </div>
 
           <div
-            className="font-serif-body text-[22px] font-normal mb-4 leading-[1.2]"
+            className="font-serif-body text-[24px] font-normal mb-4 leading-[1.2]"
             style={{ color: b.highlight ? 'hsl(42 33% 92%)' : 'rgba(240,237,230,0.85)' }}
           >
             {b.title}
           </div>
 
           <p
-            className="text-[13px] font-light leading-[1.8]"
+            className="text-[15px] font-light leading-[1.8]"
             style={{ color: 'rgba(240,237,230,0.55)' }}
           >
             {b.body}

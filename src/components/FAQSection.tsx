@@ -23,7 +23,7 @@ const FAQSection = () => {
           <h2 className="font-display text-[36px] font-normal text-cream leading-none mb-3.5" style={{ letterSpacing: '-1.5px' }}>
             Perguntas<br /><em className="italic" style={{ color: 'rgba(240,237,230,0.40)' }}>frequentes.</em>
           </h2>
-          <p className="font-mono-brand text-[11px] leading-[1.7] mt-3.5" style={{ color: 'rgba(240,237,230,0.78)' }}>Todas as suas dúvidas esclarecidas para tomar uma decisão.</p>
+          <p className="font-mono-brand text-[13px] leading-[1.7] mt-3.5" style={{ color: 'rgba(240,237,230,0.78)' }}>Todas as suas dúvidas esclarecidas para tomar uma decisão.</p>
         </div>
         <div style={{ borderTop: '1px solid rgba(240,237,230,0.08)' }}>
           {faqs.map((f, i) => (
@@ -31,16 +31,16 @@ const FAQSection = () => {
               <button
                 onClick={() => setOpenIdx(openIdx === i ? -1 : i)}
                 className="w-full bg-transparent border-none text-left py-[18px] cursor-pointer flex justify-between items-center gap-4 transition-colors hover:text-cream"
-                style={{ color: openIdx === i ? 'hsl(42 33% 92%)' : 'rgba(240,237,230,0.82)', fontSize: '13.5px', fontWeight: 400 }}
+                style={{ color: openIdx === i ? 'hsl(42 33% 92%)' : 'rgba(240,237,230,0.82)', fontSize: '16px', fontWeight: 400 }}
               >
                 {f.q}
                 <span
-                  className="font-mono-brand text-[14px] flex-shrink-0 transition-all"
+                  className="font-mono-brand text-[16px] flex-shrink-0 transition-all"
                   style={{ color: openIdx === i ? 'rgba(240,237,230,0.6)' : 'rgba(240,237,230,0.3)', transform: openIdx === i ? 'rotate(45deg)' : 'none' }}
                 >+</span>
               </button>
               {openIdx === i && (
-                <div className="text-[13px] font-light leading-[1.85] pb-[18px]" style={{ color: 'rgba(240,237,230,0.90)' }}>
+                <div className="text-[15px] font-light leading-[1.85] pb-[18px]" style={{ color: 'rgba(240,237,230,0.90)' }}>
                   {f.a}
                 </div>
               )}
