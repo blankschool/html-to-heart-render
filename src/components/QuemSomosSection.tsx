@@ -15,7 +15,7 @@ const portfolio = [
   { name: 'Tallis Gomes', co: 'G4 Educação' },
   { name: 'Renata Vichi', co: 'Kopenhagen · Brasil Cacau' },
   { name: 'Sandra Chayo', co: 'HOPE' },
-  { name: 'Cris Arcangeli', co: '' },
+  
   { name: 'Rony Meisler', co: 'Reserva · Rebels Ventures' },
   { name: 'Tony Bernardini', co: 'Trajeto · Edini' },
 ];
